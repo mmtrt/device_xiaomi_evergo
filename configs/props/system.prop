@@ -149,7 +149,6 @@ setupwizard.feature.baseline_setupwizard_enabled=true
 sys.ipo.disable=1
 sys.ipo.pwrdncap=2
 vendor.audiohal.telephonytx.type=2
-vendor.debug.sf.latch_unsignaled=1
 vendor.mtk_thumbnail_optimization=true
 vendor.rild.libargs=-d /dev/ttyC0
 vendor.rild.libpath=mtk-ril.so
