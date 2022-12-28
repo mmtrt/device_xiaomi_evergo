@@ -68,7 +68,7 @@
             <instance>default</instance>
         </interface>
     </hal>
-    <hal format="hidl">
+    <hal format="hidl" optional="true">
         <name>android.hardware.media.omx</name>
         <version>1.0</version>
         <interface>
@@ -80,9 +80,14 @@
             <instance>default</instance>
         </interface>
     </hal>
-    <hal format="hidl" optional="true">
+    <hal format="aidl" optional="true">
+        <name>android.hardware.power</name>
+        <version>2</version>
+        <fqname>IPower/default</fqname>
+    </hal>
+    <hal format="aidl" optional="true">
         <name>android.hardware.power.stats</name>
-        <version>1.0</version>
+        <version>1</version>
         <interface>
             <name>IPowerStats</name>
             <instance>default</instance>
