@@ -1,4 +1,35 @@
 <compatibility-matrix version="4.0" type="framework">
+    <hal format="aidl" optional="true">
+        <name>android.hardware.gnss</name>
+        <interface>
+            <name>IGnss</name>
+            <instance>default</instance>
+        </interface>
+    </hal>
+    <hal format="aidl" optional="true">
+        <name>android.hardware.power</name>
+        <version>2</version>
+        <interface>
+            <name>IPower</name>
+            <instance>default</instance>
+        </interface>
+    </hal>
+    <hal format="aidl" optional="true">
+        <name>android.hardware.power.stats</name>
+        <version>1</version>
+        <interface>
+            <name>IPowerStats</name>
+            <instance>default</instance>
+        </interface>
+    </hal>
+    <hal format="aidl" optional="true">
+        <name>android.hardware.vibrator</name>
+        <version>1-2</version>
+        <interface>
+            <name>IVibrator</name>
+            <instance>default</instance>
+        </interface>
+    </hal>
     <hal format="hidl" optional="true">
         <name>android.hardware.audio</name>
         <version>7.0</version>
@@ -32,6 +63,14 @@
         </interface>
     </hal>
     <hal format="hidl" optional="true">
+        <name>android.hardware.bluetooth.a2dp</name>
+        <version>1.0</version>
+        <interface>
+            <name>IBluetoothAudioOffload</name>
+            <instance>default</instance>
+        </interface>
+    </hal>
+    <hal format="hidl" optional="true">
         <name>android.hardware.boot</name>
         <version>1.0-2</version>
         <interface>
@@ -54,21 +93,6 @@
         </interface>
     </hal>
     <hal format="hidl" optional="true">
-        <name>android.hardware.biometrics.fingerprint</name>
-        <version>2.0-3</version>
-        <interface>
-            <name>IBiometricsFingerprint</name>
-            <instance>default</instance>
-        </interface>
-    </hal>
-    <hal format="aidl" optional="true">
-        <name>android.hardware.gnss</name>
-        <interface>
-            <name>IGnss</name>
-            <instance>default</instance>
-        </interface>
-    </hal>
-    <hal format="hidl" optional="true">
         <name>android.hardware.media.omx</name>
         <version>1.0</version>
         <interface>
@@ -77,19 +101,6 @@
         </interface>
         <interface>
             <name>IOmxStore</name>
-            <instance>default</instance>
-        </interface>
-    </hal>
-    <hal format="aidl" optional="true">
-        <name>android.hardware.power</name>
-        <version>2</version>
-        <fqname>IPower/default</fqname>
-    </hal>
-    <hal format="aidl" optional="true">
-        <name>android.hardware.power.stats</name>
-        <version>1</version>
-        <interface>
-            <name>IPowerStats</name>
             <instance>default</instance>
         </interface>
     </hal>
@@ -136,14 +147,6 @@
             <instance>default</instance>
         </interface>
     </hal>
-    <hal format="aidl" optional="true">
-        <name>android.hardware.vibrator</name>
-        <version>1-2</version>
-        <interface>
-            <name>IVibrator</name>
-            <instance>default</instance>
-        </interface>
-    </hal>
     <hal format="hidl" optional="true">
         <name>android.hardware.wifi</name>
         <version>1.0-5</version>
@@ -172,14 +175,6 @@
         <name>com.fingerprints.extension</name>
         <version>1.0</version>
         <interface>
-            <name>IFingerprintEngineering</name>
-            <instance>default</instance>
-        </interface>
-    </hal>
-    <hal format="hidl" optional="true">
-        <name>com.fingerprints.extension</name>
-        <version>1.0</version>
-        <interface>
             <name>IFingerprintNavigation</name>
             <instance>default</instance>
         </interface>
@@ -192,19 +187,11 @@
             <instance>default</instance>
         </interface>
     </hal>
-    <hal format="hidl" optional="true">
-        <name>vendor.goodix.hardware.biometrics.fingerprint</name>
-        <version>2.0-1</version>
+     <hal format="hidl" optional="true">
+        <name>vendor.xiaomi.hardware.fingerprintextension</name>
+        <version>1.0</version>
         <interface>
-            <name>IGoodixFingerprintDaemon</name>
-            <instance>default</instance>
-        </interface>
-    </hal>
-    <hal format="hidl" optional="true">
-        <name>vendor.goodix.hardware.biometrics.fingerprint</name>
-        <version>2.0-1</version>
-        <interface>
-            <name>IGoodixFingerprintDaemonExt</name>
+            <name>IXiaomiFingerprint</name>
             <instance>default</instance>
         </interface>
     </hal>
