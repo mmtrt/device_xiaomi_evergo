@@ -1258,15 +1258,17 @@ vendor/lib64/libmfido.so
 vendor/lib64/vendor.xiaomi.hardware.mfidoca@1.0.so
 
 # Fingerprint
--vendor/framework/com.fingerprints.extension.jar
+-vendor/etc/vintf/manifest/android.hardware.biometrics.fingerprint@2.1-service.xml
+vendor/etc/permissions/com.fingerprints.extension.xml
+vendor/framework/com.fingerprints.extension.jar
 vendor/lib64/com.fingerprints.extension@1.0.so
-vendor/lib64/hw/fingerprint.fpc.so:vendor/lib64/hw/fingerprint.fpc.mt6833.so
-vendor/lib64/hw/fingerprint.goodix.so:vendor/lib64/hw/fingerprint.goodix.mt6833.so
+vendor/lib64/hw/fingerprint.fpc.so
+vendor/lib64/hw/fingerprint.goodix.so
 vendor/lib64/libgf_ca.so
 vendor/lib64/libgf_hal.so
 vendor/lib64/libgoodixhwfingerprint.so
-vendor/lib64/libvendor.goodix.hardware.biometrics.fingerprint@2.1.so
 vendor/lib64/vendor.xiaomi.hardware.fingerprintextension@1.0.so
+vendor/lib64/libvendor.goodix.hardware.biometrics.fingerprint@2.1.so
 
 # Firmware
 vendor/etc/firmware/novatek_ts_ct_fw.bin
@@ -2069,21 +2071,6 @@ vendor/lib64/vendor.mediatek.hardware.pq@2.7.so
 vendor/lib64/vendor.mediatek.hardware.pq@2.8.so
 vendor/lib64/vendor.mediatek.hardware.pq@2.9.so
 vendor/lib64/vendor.mediatek.hardware.videotelephony@1.0.so
-
-# MIUI Camera
--priv-app/MiuiCamera/MiuiCamera.apk
-lib64/libcamera_algoup_jni.xiaomi.so
-lib64/libcamera_ispinterface_jni.xiaomi.so
-lib64/libcamera_mianode_jni.xiaomi.so
-lib64/libcameraservice.so
-lib64/libdoc_photo.so
-lib64/libdoc_photo_c++_shared.so
-lib64/libcamera_algoup_jni.xiaomi.so
-lib64/libcamera_ispinterface_jni.xiaomi.so
-lib64/libcamera_mianode_jni.xiaomi.so
-lib64/libmtkisp_metadata_sys.so
-lib64/vendor.mediatek.hardware.camera.isphal@1.0.so
-system_ext/lib64/vendor.mediatek.hardware.camera.atms@1.0.so
 
 # NFC
 
