@@ -14,5 +14,11 @@
 		"repository"	:	"PixelExperience/hardware_xiaomi",
 		"target_path"	:	"hardware/xiaomi",
 		"branch"	:	"twelve"
+	},
+	{
+		"remote"	:	"github",
+		"repository"	:	"LineageOS/android_external_exfat",
+		"target_path"	:	"external/exfat",
+		"branch"	:	"lineage-17.1"
 	}
 ]
