@@ -803,6 +803,18 @@
         <item>0:2:15</item>
     </string-array>
 
+    <!-- An array of arrays of side fingerprint sensor properties relative to each display.
+         Note: this value is temporary and is expected to be queried directly
+         from the HAL in the future. -->
+     <array name="config_sfps_sensor_props" translatable="false">
+        <item>@array/config_sfps_sensor_props_0</item>
+    </array>
+
+    <array name="config_sfps_sensor_props_0" translatable="false">
+@@ -516,4 +517,10 @@
+        <item>900</item> <!--item>sensorLocationY</item-->
+        <item>200</item> <!--item>sensorRadius</item-->
+    </array>
     <!-- Enables or disables fading edges when marquee is enabled in TextView.
          Off by default, since the framebuffer readback used to implement the
          fading edges is prohibitively expensive on most GPUs. -->
