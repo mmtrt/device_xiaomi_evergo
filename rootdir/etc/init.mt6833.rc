@@ -243,7 +243,6 @@ on property:ro.boot.product.hardware.sku=""
     mount none /dev/null /vendor/lib64/android.hardware.nfc@1.0.so bind
     mount none /dev/null /vendor/lib64/android.hardware.nfc@1.1.so bind
     mount none /dev/null /vendor/lib64/android.hardware.nfc@1.2.so bind
-    mount none /dev/null /vendor/etc/permissions/com.android.nfc_extras.xml bind
     mount none /dev/null /product/etc/permissions/android.software.nfc.beam.xml bind
     mount none /dev/null /system/etc/permissions/android.software.nfc.beam.xml bind
     mount none /dev/null /system/etc/permissions/com.android.nfc_extras.xml bind
