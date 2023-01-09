@@ -265,6 +265,7 @@ on property:ro.factory_mode=1 && property:sys.boot_completed=1
     chown system system /data/local/tmp
     chmod 0777 /data/local/tmp
     chmod 0666 /dev/block/sdc9
+    write /sys/kernel/fast_charge/force_fast_charge 1
 
 
 on post-fs-data
