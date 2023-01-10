@@ -275,6 +275,10 @@ vendor/lib64/libbt-vendor.so
 vendor/lib64/vendor.mediatek.hardware.bluetooth.audio@2.1.so
 vendor/lib64/vendor.mediatek.hardware.bluetooth.audio@2.2.so
 
+# Bluetooth (aptX) - from google/sunfish/sunfish:12/S3B1.220318.003/8372304:user/release-keys
+lib64/libaptXHD_encoder.so:system_ext/lib64/libaptXHD_encoder.so|e13fa70c97caaa24d061678bdee608eb8850a69e
+lib64/libaptX_encoder.so:system_ext/lib64/libaptX_encoder.so|df1c89d7af1bb35808d5fe3496b04ba066c10cbc
+
 # Camera
 vendor/etc/camera/mibokeh_mt6853_opencl.bin
 vendor/etc/camera/mibokeh_mt6853_parameter.bin
@@ -2063,6 +2067,21 @@ vendor/lib64/vendor.mediatek.hardware.pq@2.7.so
 vendor/lib64/vendor.mediatek.hardware.pq@2.8.so
 vendor/lib64/vendor.mediatek.hardware.pq@2.9.so
 vendor/lib64/vendor.mediatek.hardware.videotelephony@1.0.so
+
+# MIUI Camera
+-priv-app/MiuiCamera/MiuiCamera.apk
+lib64/libcamera_algoup_jni.xiaomi.so
+lib64/libcamera_ispinterface_jni.xiaomi.so
+lib64/libcamera_mianode_jni.xiaomi.so
+lib64/libcameraservice.so
+lib64/libdoc_photo.so
+lib64/libdoc_photo_c++_shared.so
+lib64/libcamera_algoup_jni.xiaomi.so
+lib64/libcamera_ispinterface_jni.xiaomi.so
+lib64/libcamera_mianode_jni.xiaomi.so
+lib64/libmtkisp_metadata_sys.so
+lib64/vendor.mediatek.hardware.camera.isphal@1.0.so
+system_ext/lib64/vendor.mediatek.hardware.camera.atms@1.0.so
 
 # NFC - from POCO/evergreen_global/evergreen:12/SP1A.210812.016/V13.0.4.0.SGBMIXM:user/release-keys
 vendor/etc/libnfc-hal-st.conf|7d8ca0e39963cb52ec3022faf4dd4c2d
