@@ -27,4 +27,4 @@ PRODUCT_MANUFACTURER := Xiaomi
 # Build info
 PRODUCT_GMS_CLIENTID_BASE := android-xiaomi
 
-BUILD_FINGERPRINT := Redmi/evergo_in/evergo:12/SP1A.210812.016/V13.0.5.0.SGBINXM:user/release-keys
+BUILD_FINGERPRINT := google/sunfish/sunfish:12/S3B1.220318.003/8372304:user/release-keys
