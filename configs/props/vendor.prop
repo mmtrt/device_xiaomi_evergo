@@ -29,6 +29,7 @@ persist.sys.dalvik.vm.lib.2=libart.so
 persist.sys.usb.config=adb
 persist.camera.HAL3.enabled=1
 persist.camera.eis.enabled=1
+persist.vendor.accelerate.charge=true
 persist.vendor.anr.enhancement=0
 persist.vendor.camera3.pipeline.bufnum.base.imgo=4
 persist.vendor.camera3.pipeline.bufnum.base.lcso=4
