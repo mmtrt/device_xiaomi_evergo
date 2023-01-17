@@ -17,4 +17,4 @@
 #pragma once
 
 #define FASTCHARGE_DEFAULT_SETTING true
-#define FASTCHARGE_PATH "/sys/class/power_supply/usb"
+#define FASTCHARGE_PATH "/sys/class/power_supply/pd_active"
