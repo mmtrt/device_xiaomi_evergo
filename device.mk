@@ -97,10 +97,6 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     android.hardware.ir@1.0-service.xiaomi
 
-# Fastcharge
-PRODUCT_PACKAGES += \
-    vendor.lineage.fastcharge@1.0-service.evergo
-
 # Bluetooth
 PRODUCT_PACKAGES += \
     audio.bluetooth.default \
