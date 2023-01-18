@@ -1,0 +1,11 @@
+on init
+    chown system system /sys/class/power_supply/pd_active
+
+service vendor.fastcharge-hal-1-0 /vendor/bin/hw/vendor.lineage.fastcharge@1.0-service.evergo
+    class hal
+    user system
+    group system
+    disabled
+
+on property:sys.boot_completed=1
+    start vendor.fastcharge-hal-1-0
