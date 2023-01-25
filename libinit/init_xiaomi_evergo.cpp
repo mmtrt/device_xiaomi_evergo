@@ -15,9 +15,9 @@ static const variant_info_t evergo_cn_info = {
 
     .brand = "Redmi",
     .device = "evergo",
-    .name = "evergo_cn",
-    .marketname = "Redmi Note 11 5G",
-    .model = "21091116AC",
+    .name = "evergo_in",
+    .marketname = "Redmi Note 11T 5G",
+    .model = "21091116AI",
     .build_fingerprint = "google/cheetah/cheetah:13/TQ1A.230105.002/9325679:user/release-keys",
 
     .nfc = false,
