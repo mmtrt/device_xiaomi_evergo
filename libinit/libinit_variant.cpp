@@ -14,6 +14,7 @@ using android::base::GetProperty;
 
 #define BID_PROP "ro.boot.board_id"
 #define SKU_PROP "ro.boot.product.hardware.sku"
+#define HW_SKU_PROP "ro.boot.hardware.sku"
 #define HWV_PROP "ro.boot.hwversion"
 #define PRODC_PROP "ro.product.cert"
 
@@ -74,6 +75,9 @@ void set_variant_props(const variant_info_t variant) {
     // Set custom properties
     property_override("ro.product.wt.boardid", GetProperty(BID_PROP, ""));
     property_override("ro.product.subproject", GetProperty(BID_PROP, ""));
+
+    // Set hw sku
+    property_override(HW_SKU_PROP, variant.device);
 
     if (variant.nfc)
         property_override(SKU_PROP, "nfc");
