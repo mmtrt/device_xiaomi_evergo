@@ -80,6 +80,15 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     android.hardware.ir@1.0-service.xiaomi
 
+ifneq (eng,$(TARGET_BUILD_VARIANT))
+# ADB
+PRODUCT_SYSTEM_PROPERTIES += \
+    persist.sys.usb.config=adb
+
+PRODUCT_PROPERTY_OVERRIDES += \
+    ro.adb.secure=0
+endif
+
 # Bluetooth
 PRODUCT_PACKAGES += \
     audio.bluetooth.default \
