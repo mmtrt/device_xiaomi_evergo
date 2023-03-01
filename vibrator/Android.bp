@@ -1,5 +1,8 @@
+// Copyright (C) 2023 StatiX
+// SPDX-License-Identifer: Apache-2.0
+
 cc_library_static {
-    name: "android.hardware.vibrator-impl.evergo",
+    name: "libvibratorevergoimpl",
     vendor: true,
     shared_libs: [
         "libbase",
@@ -10,6 +13,15 @@ cc_library_static {
     srcs: [
         "Vibrator.cpp",
     ],
+    visibility: [
+        ":__subpackages__",
+        "//hardware/interfaces/tests/extension/vibrator:__subpackages__",
+    ],
+    target: {
+        darwin: {
+            enabled: false,
+        },
+    },
 }
 
 cc_binary {
@@ -24,7 +36,7 @@ cc_binary {
         "android.hardware.vibrator-V2-ndk",
     ],
     static_libs: [
-        "android.hardware.vibrator-impl.evergo",
+        "libvibratorevergoimpl",
     ],
     srcs: ["main.cpp"],
 }

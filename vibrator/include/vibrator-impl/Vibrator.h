@@ -1,49 +1,19 @@
 /*
  * Copyright (C) 2019 The Android Open Source Project
- *
- * Licensed under the Apache License, Version 2.0 (the "License");
- * you may not use this file except in compliance with the License.
- * You may obtain a copy of the License at
- *
- *      http://www.apache.org/licenses/LICENSE-2.0
- *
- * Unless required by applicable law or agreed to in writing, software
- * distributed under the License is distributed on an "AS IS" BASIS,
- * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
- * See the License for the specific language governing permissions and
- * limitations under the License.
+ * Copyright (C) 2023 StatiXOS
+ * SPDX-License-Identifer: Apache-2.0
  */
 
 #pragma once
 
 #include <aidl/android/hardware/vibrator/BnVibrator.h>
-#include <map>
 
 namespace aidl {
 namespace android {
 namespace hardware {
 namespace vibrator {
 
-const std::string kVibratorState    = "/sys/bus/i2c/drivers/awinic_haptic/9-005a/state";
-const std::string kVibratorDuration = "/sys/bus/i2c/drivers/awinic_haptic/9-005a/duration";
-const std::string kVibratorActivate = "/sys/bus/i2c/drivers/awinic_haptic/9-005a/activate";
-const std::string kVibratorStrength = "/sys/kernel/thunderquake_engine/level";
-
-static std::map<Effect, int32_t> vibEffects = {
-    { Effect::CLICK, 50 },
-    { Effect::HEAVY_CLICK, 60 },
-    { Effect::TICK, 32 }
-};
-
-static std::map<EffectStrength, int32_t> vibStrengths = {
-    { EffectStrength::LIGHT, 5},
-    { EffectStrength::MEDIUM, 7},
-    { EffectStrength::STRONG, 11}
-};
-
 class Vibrator : public BnVibrator {
-public:
-    Vibrator();
     ndk::ScopedAStatus getCapabilities(int32_t* _aidl_return) override;
     ndk::ScopedAStatus off() override;
     ndk::ScopedAStatus on(int32_t timeoutMs,
@@ -75,13 +45,6 @@ public:
     ndk::ScopedAStatus composePwle(const std::vector<PrimitivePwle> &composite,
                                    const std::shared_ptr<IVibratorCallback> &callback) override;
 
-private:
-    static ndk::ScopedAStatus setNode(const std::string path, const std::string value);
-    static ndk::ScopedAStatus setNode(const std::string path, const int32_t value);
-    static bool nodeExists(const std::string path);
-
-    ndk::ScopedAStatus activate(const int32_t timeoutMs);
-    bool mVibratorStrengthSupported;
 };
 
 }  // namespace vibrator
