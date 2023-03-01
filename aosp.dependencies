@@ -5,14 +5,14 @@
 	},
 	{
 		"remote"	:	"github",
-		"repository"	:	"PixelExperience/device_mediatek_sepolicy_vndr",
+		"repository"	:	"LineageOS/android_device_mediatek_sepolicy_vndr",
 		"target_path"	:	"device/mediatek/sepolicy_vndr",
-		"branch"	:	"thirteen"
-	}
+		"branch"	        :	"lineage-20"
+	},
 	{
 		"remote"	:	"github",
-		"repository"	:	"PixelExperience/hardware_xiaomi",
+		"repository"	:	"Xiaomi-MT6833/hardware_xiaomi",
 		"target_path"	:	"hardware/xiaomi",
-		"branch"	:	"thirteen"
+		"branch"	        :	"thirteen"
 	}
 ]
