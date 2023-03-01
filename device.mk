@@ -63,10 +63,10 @@ PRODUCT_PACKAGES += \
     audio_policy.stub \
     libaudiofoundation.vendor \
     libavservices_minijail.vendor \
-    libbluetooth_audio_session.vendor \
+    libbluetooth_audio_session \
     libtinycompress \
     libaudiofoundation.vendor \
-    libaudiopreprocessing.vendor
+    libaudiopreprocessing
 
 PRODUCT_COPY_FILES += \
     $(call find-copy-subdir-files,*,$(LOCAL_PATH)/audio,$(TARGET_COPY_OUT_VENDOR)/etc)
@@ -144,8 +144,7 @@ PRODUCT_PACKAGES += \
 # Fastbootd
 PRODUCT_PACKAGES += \
     fastbootd \
-    android.hardware.fastboot@1.1-impl-mock \
-    android.hardware.fastboot@1.1-impl-mock.recovery
+    android.hardware.fastboot@1.1-impl-mock
 
 # Fingerprint
 PRODUCT_PACKAGES += \
@@ -315,8 +314,8 @@ PRODUCT_PACKAGES += \
     android.hardware.power@1.1.vendor \
     android.hardware.power@1.2.vendor \
     android.hardware.power-service-mediatek \
-    vendor.mediatek.hardware.power@2.0.vendor \
-    vendor.mediatek.hardware.mtkpower@1.2.vendor
+    vendor.mediatek.hardware.power@2.0.vendor:64 \
+    vendor.mediatek.hardware.mtkpower@1.2.vendor:64
 
 # Power configs
 PRODUCT_COPY_FILES += \
@@ -416,9 +415,6 @@ PRODUCT_SOONG_NAMESPACES += \
 # Camera
 PRODUCT_PACKAGES += \
     Aperture
-
-PRODUCT_PACKAGES += \
-    RemoveCameraPackages
 
 # Soundtrigger
 PRODUCT_PACKAGES += \
