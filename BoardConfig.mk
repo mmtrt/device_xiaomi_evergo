@@ -157,9 +157,8 @@ ENABLE_VENDOR_RIL_SERVICE := true
 
 # SEPolicy
 SELINUX_IGNORE_NEVERALLOWS := true
-ifneq ($(PRODUCT_NAME),lineage_evergo)
 include device/mediatek/sepolicy_vndr/SEPolicy.mk
-endif
+
 
 # Vendor
 BOARD_VENDOR := xiaomi
