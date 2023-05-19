@@ -1315,3 +1315,8 @@ on post-fs-data
 on property:sys.boot_completed=1
     # Stop the logger service
     stop logger
+
+on property:sys.boot_completed=1
+    # Restrict permissions to socket file
+    # to hide Magisk
+    chmod 440 /proc/net/unix
