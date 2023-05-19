@@ -64,6 +64,9 @@ function blob_fixup() {
     vendor/etc/vintf/manifest/vendor.xiaomi.hardware.vibratorfeature.service.xml)
         sed -i "s/vibratorfeature/default/g" "${2}"
         ;;
+    vendor/etc/init/init.batterysecret.rc)
+	    sed -i 's/seclabel/#seclabel/g' "${2}"
+	    ;;
     esac
 }
 
