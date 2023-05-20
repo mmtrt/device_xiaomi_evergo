@@ -2212,7 +2212,6 @@ vendor/lib64/vendor.hardware.vibratorfeature.IVibratorExt-V1-ndk_platform.so
 -vendor/etc/vintf/manifest/gnss@2.1-service.xml
 -vendor/etc/vintf/manifest/lbs_hidl_service@1.0.xml
 -vendor/etc/vintf/manifest/manifest_hwcomposer.xml
--vendor/etc/vintf/manifest/power-default.xml
 
 # VINTF (ODM)
 -vendor/odm/etc/vintf/manifest_dsds.xml
